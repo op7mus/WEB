@@ -1,0 +1,15 @@
+#main{
+    background-color: aliceblue;
+    color: blue;
+    padding: 15px;
+    float: left;
+    margin: 15px;
+}
+.main{
+    background-color: aliceblue;
+    color:blueviolet;
+    border: 2px solid black;
+    /* float: left; */
+    padding: 15px;
+    margin: 15px;
+}
