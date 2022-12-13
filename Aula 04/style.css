@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: dimgrey;
+}
+h2{
+    color: aliceblue;
+    margin: 0px;
+    
+}
+header{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(95,9,121,1) 48%, rgba(201,0,255,1) 100%);
+    width: 100vw;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav {
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#title{
+    display: flex;
+    align-items: center;
+}
+#book_logo{
+    scale: 0.3;
+}
+
+#search {
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.livros{
+    /* height: 85vh; */
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.livros a:hover{
+    transform: scale(1.5);
+    border-radius: 15px;
+    transition: 500ms;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.livros img:hover{
+    border-radius: 15px;
+    box-shadow: 5px 0px 10px black;
+}
+.livros img{
+    transition: 500ms;
+}
+.livros a{
+    transition: 500ms;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.livros h3{
+    color: black;
+}
+.livros h6{
+    color: black;
+}
+.livros section{
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    
+}
+.livros section summary{
+    list-style: none;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+details {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+details details {
+    width: 350px;
+}
+
+
+footer{
+    width: 100vw;
+    height: 100px;
+    position: static;
+    bottom: 0px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(95,9,121,1) 48%, rgba(201,0,255,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rodape{
+    height: 100px;
+    width: 75vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rodape img{
+    scale: 0.5;
+    align-items: center;
+}
