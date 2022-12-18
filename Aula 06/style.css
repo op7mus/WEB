@@ -5,7 +5,10 @@
 
 /* BASE */
 body{
-    /* background-color: black; */
+    
+    background-image: url(img/bg2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 /* Barra Superior */
 /* .IndicatorBar{
@@ -25,13 +28,15 @@ body{
 
 /* header */
 .header{
+    height: 50px;
+    width: 100%;
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(90deg, rgba(131,96,195,1) 0%, rgba(102,125,182,1) 50%, rgba(46,191,145,1) 100%);
-    height: 125px;
-    width: 100%;
+    background-color: rgb(0,0,0,0.9);
+    z-index: 99;
 }
 .tags :hover{
     scale: 1.2;
@@ -46,6 +51,7 @@ body{
 .tags a{
     text-decoration: none;
     color: aliceblue;
+    transition: 500ms;
 }
 .header h1{
     text-shadow: 0px 0px 10px azure;   
@@ -53,25 +59,14 @@ body{
 }
 /* ------------------------------------------------------------- */
 /* main */
-.MainBg{
-    /* background: url(img/bg2.jpg)
-    no-repeat 
-    center center; */
-    background-image: url(img/bg2.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-}
-.MainBg img{
-    
-}
 #main{
     /* height: 1080px; */
-    width: 99vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(0,0,0,0.7);
+    background-color: rgb(0,0,0,0.9);
     gap: 15px;
 }
 /* Primeira Parte */
@@ -83,12 +78,6 @@ body{
     display: flex;
     justify-content: center;
     margin: 50px;
-}
-.sobre img{
-    scale: 0.7;
-    border-radius: 100%;
-    box-shadow: 0px 0px 40px rgb(101, 177, 240);
-    transition: 500ms;
 }
 #main a :hover{
     scale: 1;
@@ -103,7 +92,7 @@ body{
 #main h1{
     color: azure;
 }
-.sobre{
+#sobre{
     width: 75vw;
     height: 100vh;
     display: flex;
@@ -114,8 +103,16 @@ body{
     padding: 0px;
     gap: 15px;
     align-items: center;
-    background-color: rgb(35, 35, 35,0.5);
     border-radius: 50px;
+}
+#sobre img{
+    scale: 0.7;
+    border-radius: 100%;
+    box-shadow: 0px 0px 40px rgb(101, 177, 240);
+    transition: 500ms;
+}
+#sobre h1{
+    font-family:  'Chivo Mono', monospace;;
 }
 .content{
     width: 75vw;
@@ -128,7 +125,7 @@ body{
     border-radius: 15px;
 }
 #github{
-    height: 500px;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -139,11 +136,8 @@ body{
 #github h1{
     margin-bottom: 30px;
 }
-#Proj h1{
-    margin-bottom: 30px;
-}
 #Proj{
-    height: 500px;
+    height: 100vh;
     width: 75vw;
     display: flex; 
     flex-direction: column;
@@ -151,6 +145,9 @@ body{
     align-items: center;
     background-color: rgb(35, 35, 35,0.5);
     border-radius: 50px;
+}
+#Proj h1{
+    margin-bottom: 30px;
 }
 #Proj h3{
     color: aliceblue;
@@ -205,12 +202,77 @@ body{
 
 }
 /*  ------------------------------------------------------------------------------------------------------------------*/
+.info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* gap: 15px; */
+}
+#info{
+    width: 75%;
+}
 
+.exp{
+    width: 50%;
+    height: 350px;
+    border-radius: 15px;
+    background: rgb(28,146,210);
+    background: linear-gradient(180deg, rgba(177,113,69,0.5) 0%, rgba(160,95,73,0.5) 29%, rgba(28,146,210,0.5) 76%, rgba(0,212,255,0.5) 100%);
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+}
+.imgbox{
+    display: flex;
+}
+.imgbox img{
+    height: 75px;
+    width: 75px;
+    scale: 0.75;
+}
+.TextBox{
+    margin: 15px;
+}
+.exp h3{
+    color: rgb(204, 204, 204);
+    font-family: 'Roboto Slab', serif;
+}
+.exp h4{
+    color: rgb(204, 204, 204);
+}
+.exp h5{
+    color: rgb(204, 204, 204);
+    font-family: 'Playfair Display', serif;
+}
+
+
+.ButtonToTop{
+    height: 100px;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0,0,0,0.9);
+}
+.ButtonToTop a {
+    text-decoration: none;
+    color: aliceblue;
+}
+.material-symbols-outlined{
+    scale: 2;
+    background-color: black;
+    color: aliceblue;
+    margin: 10px;
+    border-radius: 100%;
+}
 /* ------------------------------------------------------------- */
 /* footer */
 .footer{
     width: 100%;
-    height: 100px;
     background: linear-gradient(90deg, rgba(131,96,195,1) 0%, rgba(102,125,182,1) 50%, rgba(46,191,145,1) 100%);
     display: flex;
     justify-content: center;
@@ -218,10 +280,11 @@ body{
 }
 #FooterContent{
     width: 75vw;
-    height: 100px;
+    /* height: 100px; */
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 #FooterContent a{
     height: 52px;
@@ -229,5 +292,13 @@ body{
     align-items: center;
     display: flex;
     justify-content: center;
-    margin-right: 15px;
+    margin: 15px;
+}
+.Contato div{
+    display: flex;
+    gap: 10px;
+    /* justify-content: center; */
+}
+.Contato img{
+    width: 20px;
 }
