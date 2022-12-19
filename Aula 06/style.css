@@ -10,6 +10,9 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
+
+
+
 /* Barra Superior */
 /* .IndicatorBar{
     background-color: #3983fa;
@@ -66,23 +69,13 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(0,0,0,0.9);
+    background-color: rgb(0,0,0,0.83);
     gap: 15px;
 }
 /* Primeira Parte */
 
-#main .sobre a{
-    height: 202px;
-    width: 202px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin: 50px;
-}
-#main a :hover{
-    scale: 1;
-    transition: 500ms;
-}
+
+
 #main p{
     color: azure;
 }
@@ -91,6 +84,10 @@ body{
 }
 #main h1{
     color: azure;
+}
+#main p{
+    width: 60%;
+    border: 60%;
 }
 #sobre{
     width: 75vw;
@@ -105,11 +102,84 @@ body{
     align-items: center;
     border-radius: 50px;
 }
+
+
+
+.teste {
+    height: 202px;
+    width: 202px;
+    display: block;
+    transition: 2s;
+}
+#main .sobre a{
+    height: 202px;
+    width: 202px;
+    align-items: center;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    margin: 50px;
+    transition: 2s;
+}
+
+
+.BackImg{
+    position: relative;
+    height: 210px;
+    width: 210px;
+    border-radius: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    z-index: 5;
+    /* transition: 2s; */
+}
+.BackImg::before{
+    content: '';
+    position: absolute;
+    height: 210px;
+    width: 210px;
+    background-image: conic-gradient(transparent, transparent, transparent, rgb(0, 255, 255));
+    animation: rotate 2s linear infinite;
+    z-index: 5;
+}
+.BackImg::after{
+    content: '';
+    position: absolute;
+    height: 210px;
+    width: 210px;
+    background-image: conic-gradient(transparent, transparent, transparent, rgba(177,113,69,1));
+    animation: rotate 2s linear infinite;
+    animation-delay: -1s;
+    z-index: 4;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#main .BackImg :hover{
+    position: relative;
+    height: 207px;
+    width: 207px;
+    border-radius: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    z-index: 5;
+    transition: 2s;
+}
+
 #sobre img{
     scale: 0.7;
     border-radius: 100%;
-    box-shadow: 0px 0px 40px rgb(101, 177, 240);
     transition: 500ms;
+    position: absolute;
+    z-index: 10;
+    transition: 700ms;
 }
 #sobre h1{
     font-family:  'Chivo Mono', monospace;;
@@ -132,6 +202,41 @@ body{
     justify-content: center;
     background-color: rgb(35, 35, 35,0.5);
     border-radius: 50px;
+    z-index: 5;
+}
+#git{
+    position: relative;
+    border-radius: 15px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    z-index: 5;
+}
+.test2{
+    background-color: black;
+    z-index: 10;
+    height: 98%;
+    width: 99%;
+    border-radius: 15px;
+}
+#git::before{
+    content: '';
+    position: absolute;
+    height: 2000px;
+    width: 300vw;
+    background-image: conic-gradient(transparent, transparent, transparent, rgb(0, 255, 255));
+    animation: rotate 2s linear infinite;
+    z-index: 5;
+}
+#git::after{
+    content: '';
+    position: absolute;
+    height: 2000vh;
+    width: 300vw;
+    background-image: conic-gradient(transparent, transparent, transparent, rgba(177,113,69,1));
+    animation: rotate 2s linear infinite;
+    animation-delay: -1s;
+    z-index: 4;
 }
 #github h1{
     margin-bottom: 30px;
