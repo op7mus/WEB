@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Doc</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    
+    <!-- funcao para converter temperatura -->
+    <!-- <script type="text/javascript">
+        function converterTemperatura(celcius) {
+            var fah = (celcius * 1.8) + 32;
+            return fah
+        }
+        var fahreinheit = converterTemperatura(30);
+        console.log(fahreinheit + ' Fahreinheit');
+    </script> -->
+
+
+
+
+
+    <!-- vai demorar 3000ms para executar afuncao Myfunction -->
+    <button onclick="myVar">Click Here!</button>
+    <!-- pode cancelar o setTimeout enquanto espera os 3000ms -->
+    <button onclick="clearTimeout(myVar)">Cancelar</button>
+    
+    <script type="text/javascript">
+        const myVar = setTimeout(myfunction, 1000);
+        function myfunction() {
+            alert("Alerta!!");
+        }
+
+    </script>
+
+
+    <script>
+        for (let i = 0; i < 100 ; i++) {
+            setTimeout(console.log('hello world'), 10000);
+        }
+    </script>
+</body>
+</html>
